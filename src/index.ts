@@ -65,7 +65,7 @@ function getAddress(wallet: { keypair: Ed25519Keypair }) {
   return wallet.keypair.getPublicKey().toSuiAddress();
 }
 
-/* =====================
+/* =======================
    HELPERS
 ========================= */
 function deriveKeypairFromMnemonic(mnemonic: string) {
