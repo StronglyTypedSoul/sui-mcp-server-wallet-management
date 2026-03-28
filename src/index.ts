@@ -26,7 +26,7 @@ import {
 import { generateMnemonic, mnemonicToSeedSync } from "bip39";
 import { derivePath } from "ed25519-hd-key";
 
-/* ===========================
+/* =====================
    NETWORK CONFIG
 ========================= */
 const NETWORKS = {
@@ -65,7 +65,7 @@ function getAddress(wallet: { keypair: Ed25519Keypair }) {
   return wallet.keypair.getPublicKey().toSuiAddress();
 }
 
-/* =========================
+/* =====================
    HELPERS
 ========================= */
 function deriveKeypairFromMnemonic(mnemonic: string) {
